@@ -1,49 +1,37 @@
-**🎮 LatencyLab**
+# LatencyLab
 
-Advanced Network Analyzer for Gamers  
-Coming soon
+LatencyLab is an advanced Network Latency Analyzer for gamers. It streams realtime ping data and traceroute insights over WebSockets with a React + Tailwind dashboard.
 
-**🚧 Coming Soon**
+> Coming soon: richer analytics, historical reports, and saved test profiles.
 
-LatencyLab is under active development. The first public release will include a complete frontend and backend that provide real time ping, jitter, packet loss, and traceroute analysis tailored for competitive gamers. Early access builds and setup instructions will be published here when ready.
+## Project Structure
+- **backend/** Node.js + Express + WebSockets server for ping and traceroute
+- **frontend/** React + Tailwind UI built with Vite
 
-**📘 About the Project**
+## Setup
 
-LatencyLab helps gamers monitor and diagnose network problems that cause unfair gameplay. The tool will provide live charts, route analysis, and exportable reports so players can find the source of lag and share evidence with their ISP.
+### Backend
+1. `cd backend`
+2. `npm install`
+3. `npm start`
 
-**✨ Planned Core Features**
+The backend listens on `http://localhost:4000` and exposes WebSocket upgrades at the same port.
 
-- Real time ping monitoring with spike detection
-- Jitter calculation and visualization
-- Packet loss detection and alerts
-- Traceroute hop breakdown and latency per hop
-- Neon cyber UI designed for gamers
-- One click export of logs and reports for ISP complaints
-- Modular backend to add custom tests and protocols
-- Lightweight in-game overlay option for live HUD
+### Frontend
+1. `cd frontend`
+2. `npm install`
+3. `npm run dev`
+4. Open the URL printed by Vite (default `http://localhost:5173`).
 
-**🛠 Tech Stack (Planned)**
+## Usage
+1. Start the backend server.
+2. Start the frontend dev server.
+3. Enter a target host/IP (e.g., `8.8.8.8`).
+4. Click **Start** to stream ping data, **Stop** to halt, and **Run** under Traceroute to capture route hops.
 
-**Frontend**
-
-- React
-- Vite
-- Tailwind CSS
-- WebSocket client
-- SVG or Canvas charts
-
-**Backend**
-
-- Node.js
-- Express
-- ws (WebSocket server)
-- System-level ping and traceroute integration with fallbacks
-
-**🛣 Roadmap**
-
-- Release alpha with core ping and traceroute features
-- Add persistent logging and historical charts
-- Build Electron overlay for in-game HUD
-- Add AI based spike prediction and notifications
-- Implement per-game server tests and presets
-- Add PDF report generation and share links
+## Planned Features
+- Persistent test profiles and history
+- Exportable latency reports
+- Multi-target comparison view
+- Authentication for shared workspaces
+- Cloud relay for NAT-restricted clients

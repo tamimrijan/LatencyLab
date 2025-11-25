@@ -1,0 +1,19 @@
+{
+  "name": "latencylab-backend",
+  "version": "1.0.0",
+  "description": "Backend server for LatencyLab providing realtime ping and traceroute data via WebSockets.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
